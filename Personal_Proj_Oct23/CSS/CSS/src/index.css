@@ -1,0 +1,26 @@
+
+.my-border{
+  border: #900080;
+  width: 80px;
+  height: 240px;
+  background-color: #25965b;
+  line-height: 29px;
+  text-align: center;
+  border-bottom-left-radius: 30;
+  box-sizing: border-box;
+
+  
+}
+h3{
+  color: rgba(90, 24, 222, 0.916);
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  text-align: center;
+  text-transform: capitalize; 
+}
+  
+
+
+
+ /* Testing back rgba number| numbers STAY within color range with some variables */
+
