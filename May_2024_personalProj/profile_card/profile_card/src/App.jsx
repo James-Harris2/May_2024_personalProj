@@ -1,4 +1,7 @@
-
+import Skill from '../Skill'
+import SkillList from '../SkillList'
+import Avatar from '../Avatar'
+import Intro from '../Intro'
 import './App.css'
 
 function App() {
