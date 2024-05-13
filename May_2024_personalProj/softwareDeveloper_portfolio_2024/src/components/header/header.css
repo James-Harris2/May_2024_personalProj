@@ -1,0 +1,28 @@
+:root {
+    --light-purple: #494160;
+    --dark-purple: #B26388;
+}
+
+
+
+.header {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg,var(--dark-purple), var(--light-purple)) ;
+}
+
+
+
+.header img {
+    width: 23em;
+    border-radius: 10%;
+    justify-self: center;
+    align-self: flex-end;
+}
+
+.main-title {
+    align-self: flex-start;
+}
