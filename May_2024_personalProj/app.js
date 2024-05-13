@@ -16,7 +16,7 @@ const arr3 = [];
 // get Each element in the arg
 arr1.forEach((ele, ind) =>{
     console.log(ele);
-    arr3[4] = "changed_TO_BabyCakes"
+    arr3[ind] = "changed_TO_BabyCakes"
 
 })
 
