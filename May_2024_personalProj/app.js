@@ -12,3 +12,16 @@ console.log(arr1);
 const arr2 = ['four', 4, 'five', 5, 'six', 6, 'seven', 78]
 console.log(arr2);
 
+const arr3 = [];
+// get Each element in the arg
+arr1.forEach((ele, ind) =>{
+    console.log(ele);
+    arr3[4] = "changed_TO_BabyCakes"
+
+})
+
+const arr4 = []
+
+arr2.forEach((ele, ind) =>{
+    console.log(ele);
+})
