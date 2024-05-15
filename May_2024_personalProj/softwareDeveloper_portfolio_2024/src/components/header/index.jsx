@@ -1,6 +1,6 @@
 import author from '../header/asset.jpg'
 import "./header.css"
-import MainTitle  from './MainTitle'
+import MainTitle  from './mainTitle'
 
 
 const Header = () => {

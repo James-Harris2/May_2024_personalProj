@@ -2,20 +2,17 @@
 
 import './css/normalize.css';
 import './css/master.css';
-import {Routes} from 'react-router-dom'
+// import {Routes} from 'react-router-dom'
 import Main from './components/index'
-import MainTitle from './components/header/MainTitle';
-
-
-
+// import mainTitle from './components/header'
 
 function App() {
   
 
   return (
     <>
-    <Routes path='/' components={MainTitle} />
-    <MainTitle />
+    {/* <Routes path='/' components={} /> */}
+    <mainTitle />
     <Main />
     </>
   )
