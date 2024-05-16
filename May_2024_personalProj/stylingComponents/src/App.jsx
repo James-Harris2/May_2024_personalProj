@@ -7,7 +7,7 @@ function App() {
   const options = ['Apple', 'Honey', 'Tea', 'Pears', 'Oranges']
   return (
     <div className='App'>
-      <h1>Welcome Shopper James</h1>
+      <h1>Welcome State Mgmt practice James</h1>
         <h6>of course we care! </h6>
           <p> now pick a item </p>
         <Autocomplete
