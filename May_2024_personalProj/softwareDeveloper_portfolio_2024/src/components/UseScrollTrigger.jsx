@@ -12,7 +12,6 @@ import {
   import { useInView } from "react-intersection-observer";
   import { TransitionGroup } from "react-transition-group";
   import { useRef } from "react";
-  import PhoneInTalkRoundedIcon from '@mui/icons-material/PhoneInTalkRounded';
   
   export function UseScrollTrigger() {
     const paperRef = useRef();
@@ -24,10 +23,10 @@ import {
   
     return (
       <div className="App" style={{ height: "500vh" }}>
+        <Typography variant='caption'>Welcome</Typography>
         <Slide in={!trigger} appear={false}>
           <AppBar>
             <Toolbar />
-            <PhoneInTalkRoundedIcon />
           </AppBar>
         </Slide>
   
@@ -35,9 +34,10 @@ import {
   
         <Paper
           ref={paperRef}
-          sx={{ bgcolor: "red", mt: "500px", height: 2000, width: "100%" }}
+          sx={{ bgcolor: "#A4161A", mt: "500px", height: 2000, width: "100%" }}
         >
-          My text
+          I don't know what to put inside my paper
+          maybe an About Me
         </Paper>
       </div>
     );
@@ -60,7 +60,7 @@ import {
           alignItems="center"
         >
           <Typography textAlign="center" variant="h2">
-            Welcome my software development portfolio
+            Welcome to my software development portfolio
           </Typography>
         </Box>
         <Box
@@ -72,7 +72,7 @@ import {
           <Stack>
             <Fade in={h4TextInView} timeout={{ enter: 2000, exit: 0 }}>
               <Typography ref={h4TextRef} variant="h4" textAlign="center">
-                Have a look around
+                 UNDER CONSTRUCTION
               </Typography>
             </Fade>
             <Stack mt={2} direction="horizontal" justifyContent="center" gap={2}>
