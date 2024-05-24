@@ -1,6 +1,7 @@
 
 import './App.css'
 import Head from './AppBar'
+import Main from './ToolBar'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
   return (
     <>
     <Head />
+    <Main />
     </>
   )
 }

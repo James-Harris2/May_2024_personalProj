@@ -1,4 +1,5 @@
-import {AppBar, Button, Typography} from '@mui/material';
+import { Button,} from '@mui/material';
+import SendIcon from "@mui/icons-material/Send"
 
 // Experimenting with Different layout
 
@@ -6,13 +7,11 @@ import {AppBar, Button, Typography} from '@mui/material';
 function Head() {
   return (
     <div>
-        <AppBar elevation="8">
-            <Typography> J.E.H.II</Typography>
-            <Button color="error">Login</Button>
+            <Button variant="contained" endIcon={<SendIcon />} color="secondary">Enter</Button>
             
-        Build Better User UI Components using Material UI
+       <h5> Build Better User UI Components using Material UI </h5>
 
-        </AppBar>
+      
     </div>
   )
 }
