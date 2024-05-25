@@ -1,5 +1,9 @@
-import {AppBar, Toolbar, Typography, Button } from "@mui/material";
-// import { divs, inValue, hTag, span,} from "./js1.js"
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
 
 
 
@@ -10,22 +14,22 @@ import {AppBar, Toolbar, Typography, Button } from "@mui/material";
 
 
 
-function Main() {
-  // Removed useEffect as it is not needed
-
+function NavBar() {
   return (
-    <div>
-      <AppBar variant="outlined">
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static">
         <Toolbar>
-          <Typography>JEH II</Typography>
-          <Button sx={{ marginLeft: "auto" }} variant="contained" color="warning">
-            Login
-          </Button>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            JEHii
+          </Typography>
+          <Button color="inherit" component={Link} to="/">Home</Button>
+          <Button color="inherit" component={Link} to="/projects">Projects</Button>
+          <Button color="inherit" component={Link} to="/resume">Resume</Button>
+          {/* Add more buttons for other routes */}
         </Toolbar>
       </AppBar>
-    </div>
+    </Box>
   );
 }
 
-export default Main;
-
+export default NavBar;
