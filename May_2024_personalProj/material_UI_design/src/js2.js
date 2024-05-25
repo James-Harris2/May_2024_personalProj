@@ -37,14 +37,15 @@ console.log(friends[4]);
 
 
 //  Functions
-
+// 1
 function hello(){
     console.log('Hello James');
     console.log('Hello Kids');
     console.log('Hello family');
 }
 hello()
-
+// repeating code is not DRY
+// 2
 function helloJH(){
     console.log('Hello JH');
 }
@@ -54,3 +55,25 @@ helloJH()
 // Placeholders, local vars
 // arguments - when invoke/call/run
 // use vars/values, multiple params, undefined
+
+function greet(name){
+    console.log('hello there ' + name);
+}
+
+greet('what"s up James')
+greet('Dobby')
+
+
+
+const wallHeight = 80;
+
+
+function calculate(value){
+console.log('the value in cm is: ' + (value * 2.54 + ' cm'));
+    return('hello world')
+}
+const width = calculate(100);
+const height = calculate(wallHeight);
+
+const dimensions = [width, height]
+console.log(dimensions);
