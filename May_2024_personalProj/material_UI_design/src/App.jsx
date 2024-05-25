@@ -1,4 +1,4 @@
-
+import "./js2"
 import './App.css'
 import Head from './AppBar'
 import Main from './ToolBar'
