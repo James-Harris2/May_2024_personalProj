@@ -25,6 +25,7 @@ function NavBar() {
           <Button color="inherit" component={Link} to="/">Home</Button>
           <Button color="inherit" component={Link} to="/projects">Projects</Button>
           <Button color="inherit" component={Link} to="/resume">Resume</Button>
+          <Button color="inherit" component={Link} to="/Head">Head</Button>
           {/* Add more buttons for other routes */}
         </Toolbar>
       </AppBar>

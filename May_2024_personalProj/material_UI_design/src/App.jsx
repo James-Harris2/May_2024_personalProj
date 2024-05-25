@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route,} from 'react-router-dom';
 import Home from "./Home/homeComponent" // Your component files
 import Projects from "./Projects/projectsComponent";
 import Resume from "./Resume/resumeComponent";
-import Head from './AppBar'
+import Head from './Head'
 import Main from './ToolBar'
 // ... other components
 
