@@ -4,6 +4,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
+import TechStack from '../Components/components/Techstack';
 
 
 
@@ -20,12 +21,12 @@ function NavBar() {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            JEHii
+            James E.Harris,II
           </Typography>
           <Button color="inherit" component={Link} to="/">Home</Button>
+          <Button color="inherit" component={Link} to="/About">About</Button>
           <Button color="inherit" component={Link} to="/projects">Projects</Button>
           <Button color="inherit" component={Link} to="/resume">Resume</Button>
-          <Button color="inherit" component={Link} to="/Head">Head</Button>
           {/* Add more buttons for other routes */}
         </Toolbar>
       </AppBar>

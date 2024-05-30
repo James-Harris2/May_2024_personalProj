@@ -1,5 +1,5 @@
 import { Container, Typography, Grid, Link } from "@mui/material";
-import socialMediaLinks from "../src/Contants"
+import socialMediaLinks from "../Contants"
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -8,11 +8,12 @@ function Footer() {
   // ... (your socialMediaLinks array here)
 
   return (
-    <Container maxWidth="md" component="footer" sx={{ bgcolor: "primary.main", py: 4 }}>
-      <Grid container justifyContent="space-between" alignItems="center">
+        <Container maxWidth="md" component="footer" sx={{ bgcolor: "inherit", py: 4 }}>
+    <Grid container justifyContent="space-between" alignItems="center">
         <Grid item xs={12} sm={4}>
           <Typography variant="body2" color="white">
-            Designed and Developed by James Harris
+            Designed and Developed || 
+            by JEH, II
           </Typography>
         </Grid>
 

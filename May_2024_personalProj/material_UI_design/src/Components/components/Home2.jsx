@@ -1,6 +1,4 @@
 import { Container, Grid, Typography, Box, IconButton, } from "@mui/material";
-import about from "../src/Assets/about.png"
-import Tilt from "react-parallax-tilt"; 
 import {
   AiFillGithub,
 } from "react-icons/ai";
@@ -30,8 +28,8 @@ function Home2() {
             I fell in love with programming, after being a commercial truck driver for 20+ years. I enjoy learning Technologies, and serving my community with my talents build something great… 🤷‍♂️
             <br />
             <br />
-            I am fluent in classics like
-            <i style={{ color: "purple" }}> C++, Javascript. </i>
+            I am fluent in languanges  & frame works like...
+            <i style={{ color: "purple" }}> NodeJS, Front-End Javascript. </i>
             <br />
             <br />
             My field of Interests are building new &nbsp;
@@ -48,9 +46,7 @@ function Home2() {
           </Typography>
         </Grid>
         <Grid item xs={12} md={4} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-          <Tilt>
-            <img src={about} alt="avatar" style={{ maxWidth: "100%" }} />
-          </Tilt>
+
         </Grid>
       </Grid>
 

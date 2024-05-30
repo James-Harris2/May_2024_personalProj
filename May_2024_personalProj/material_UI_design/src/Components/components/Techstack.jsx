@@ -1,5 +1,4 @@
 import { Box, Grid, Typography } from "@mui/material";  // Import MUI components
-import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
   DiReact,
@@ -7,33 +6,28 @@ import {
   DiMongodb,
   DiPython,
   DiGit,
-  DiJava,
+  DiAws,
+
 } from "react-icons/di";
 import {
-  SiRedis,
   SiFirebase,
   SiNextdotjs,
-  SiSolidity,
   SiPostgresql,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
 
 function Techstack() {
   const techIcons = [ // Array of tech icons for easier iteration
-    { icon: <CgCPlusPlus />, label: 'C++' },
     { icon: <DiJavascript1 />, label: 'JavaScript' },
-    { icon: <TbBrandGolang />, label: 'Go' },
     { icon: <DiNodejs />, label: 'Node.js' },
     { icon: <DiReact />, label: 'React' },
-    { icon: <SiSolidity />, label: 'Solidity' },
+    { icon: <DiAws />, label: 'AWS' },
+
     { icon: <DiMongodb />, label: 'MongoDB' },
     { icon: <SiNextdotjs />, label: 'Next.js' },
     { icon: <DiGit />, label: 'Git' },
     { icon: <SiFirebase />, label: 'Firebase' },
-    { icon: <SiRedis />, label: 'Redis' },
     { icon: <SiPostgresql />, label: 'PostgreSQL' },
     { icon: <DiPython />, label: 'Python' },
-    { icon: <DiJava />, label: 'Java' },
   ];
 
   return (
