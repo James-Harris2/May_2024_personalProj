@@ -1,5 +1,5 @@
 import  { useState } from 'react';
-import { AppBar, Toolbar, IconButton, Tabs, Tab, Box } from '@mui/material';
+import { AppBar, Toolbar, IconButton, Tabs, Tab,  } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link as RouterLink } from 'react-router-dom';
 import { FaHome, FaProjectDiagram, FaEnvelope, FaUser, FaFileAlt } from 'react-icons/fa';
@@ -15,7 +15,7 @@ function NavBar() {
   const tabData = [ // Array to store tab data
     { label: "Home", icon: <FaHome />, to: "/" },
     { label: "Projects", icon: <FaProjectDiagram />, to: "/projects" },
-    { label: "Contact Me", icon: <FaEnvelope />, to: "/contact" },
+    { label: "Contact Me", icon: <FaEnvelope />, to: "/contact me" },
     { label: "About Me", icon: <FaUser />, to: "/about" },
     { label: "Resume", icon: <FaFileAlt />, to: "/resume" },
   ];

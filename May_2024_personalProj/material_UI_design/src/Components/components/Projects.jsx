@@ -2,7 +2,7 @@ import { Container, Typography, Grid } from "@mui/material";
 import ProjectCard from "../components/ProjectCards";
 import Particle from "./Particles"
 import { SiChatbot } from "react-icons/si";
-
+import 
 
 function Projects() {
   const projects = [

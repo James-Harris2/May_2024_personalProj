@@ -56,7 +56,7 @@
 //     </Card>
 //   );
   
-// }
+
 // export default  ProjectComponent
 
 // // ... (Your ParentComponent remains the same)
