@@ -3,14 +3,17 @@ import { AnimatePresence, motion, } from 'framer-motion';
 import Home from "./Components/components/Home";
 import About from "./Components/components/About";
 import ViewResume from './Resume/ViewResume';
-import ProjectsComponent from './Projects/projectsComponent';
+// import ProjectsComponent from './Projects/projectsComponent';
 import { Container, } from '@mui/material';
 import NavBar from "./Components/components/NavBar"
 import Contact from './Components/components/Contact';
 import Particles from '../src/Components/components/Particles';
 import ToolStack from "./Components/components/ToolStack";
 import Footer from "./Components/components/Footer"
-
+import Home2 from './Components/components/Home2';
+import ProjectCards from './Components/components/ProjectCards';
+// import ContactMe from './Components/components/Contact';
+import ContactForm from './Components/components/Contact';
 
 // Page transition animations
 const pageVariants = {
@@ -31,6 +34,7 @@ function App() {
   return (
     <BrowserRouter>
       <NavBar />
+      <Home2 />
 
       <div>
         <Container>
@@ -47,7 +51,7 @@ function App() {
                   </motion.div>
                 }
               />
-            
+
 
               {/* Other Routes */}
               <Route path="/about" element={
@@ -58,7 +62,7 @@ function App() {
 
               <Route path="/projects" element={
                 <motion.div variants={pageVariants} initial="initial" animate="in" exit="out">
-                  <ProjectsComponent />
+                  <ProjectCards />
                 </motion.div>
               } />
 
@@ -67,19 +71,22 @@ function App() {
                   <ViewResume />
                 </motion.div>
               } />
-              `               <Route path="/contact me" element={
+                <Route path="/contact me" element={
                 <motion.div variants={pageVariants} initial="initial" animate="in" exit="out">
+                <Contact />
 
-                  <Contact />
                 </motion.div>
               } />
 
             </Routes>
           </AnimatePresence>
         </Container>
-      <ToolStack  />
+        <ToolStack />
+
+
       </div>
       <Footer />
+
     </BrowserRouter>
   );
 }

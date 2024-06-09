@@ -19,9 +19,9 @@ function Type() {
             options={{
               strings: [
                 "I'm James E. Harris, II",
-                "MERN Software Developer",
-                "Proud Father of 3 ",
-                "Former Commercial OTR Driver",
+                "Software Developer",
+                "Former OTR Driver ",
+                "I build custom websites & mobile application",
                 "Open Source Contributor"
               ],
               autoStart: true,

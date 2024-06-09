@@ -22,13 +22,14 @@ function Home2() {
       <Grid container spacing={4}>
         <Grid item xs={12} md={8}>
           <Typography variant="h4" gutterBottom>
-           ALLOW LET ME <span style={{ color: "purple" }}>INTRODUCE</span> MYSELF
+           ALLOW LET ME <span style={{ color: "white" }}>re-INTRODUCE</span> MYSELF
           </Typography>
           <Typography variant="body1">
-            I fell in love with programming, after being a commercial truck driver for 20+ years. I enjoy learning Technologies, and serving my community with my talents build something great… 🤷‍♂️
+            I love coding, after spending many years as commercial truck driver. In 2022, I decided to pursure my passion in Web Development.
+            I enjoy learning Technologies, and serving my community with my talents build something great products. 
             <br />
             <br />
-            I am fluent in languanges  & frame works like...
+            I am fluent in languanges  & frameworks like...
             <i style={{ color: "purple" }}> NodeJS, Front-End Javascript. </i>
             <br />
             <br />

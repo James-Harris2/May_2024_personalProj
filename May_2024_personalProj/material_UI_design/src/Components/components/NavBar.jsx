@@ -1,56 +1,65 @@
-import  { useState } from 'react';
-import { AppBar, Toolbar, IconButton, Tabs, Tab,  } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
-import { Link as RouterLink } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { AppBar, Toolbar, IconButton, Tabs, Tab } from '@mui/material';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { FaHome, FaProjectDiagram, FaEnvelope, FaUser, FaFileAlt } from 'react-icons/fa';
-// import IconLogo from './IconLogo'; 
+import { motion, AnimatePresence } from 'framer-motion';
 
 function NavBar() {
-  const [value, setValue] = useState(""); // Default to the Home tab
+  const [activeTab, setActiveTab] = useState("/");
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    setActiveTab(pathname);
+  }, [pathname]);
 
   const handleChange = (event, newValue) => {
-    setValue(newValue);
+    setActiveTab(newValue);
   };
 
-  const tabData = [ // Array to store tab data
-    { label: "Home", icon: <FaHome />, to: "/" },
-    { label: "Projects", icon: <FaProjectDiagram />, to: "/projects" },
-    { label: "Contact Me", icon: <FaEnvelope />, to: "/contact me" },
-    { label: "About Me", icon: <FaUser />, to: "/about" },
-    { label: "Resume", icon: <FaFileAlt />, to: "/resume" },
+  const tabData = [
+    { label: "Home", icon: FaHome, to: "/", hoverColor: "rgba(255, 255, 255, 0.8)" },
+    { label: "Projects", icon: FaProjectDiagram, to: "/projects", hoverColor: "rgba(255, 255, 255, 0.8)" },
+    { label: "Contact Me", icon: FaEnvelope, to: "/contact me", hoverColor: "rgba(255, 255, 255, 0.8)" },
+    { label: "About Me", icon: FaUser, to: "/about", hoverColor: "rgba(255, 255, 255, 0.8)" },
+    { label: "Resume", icon: FaFileAlt, to: "/resume", hoverColor: "rgba(255, 255, 255, 0.8)" },
   ];
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ bgcolor: "primary.main" }}> 
       <Toolbar>
-        {/* <IconLogo />  */}
-        <IconButton 
-          edge="start" 
-          color="inherit" 
-          aria-label="menu" 
-          sx={{ ml: 2, display: { xs: 'block', sm: 'none' } }} 
-          onClick={() => setValue(null)}
-        >
-          <MenuIcon />
-        </IconButton>
-
-        <Tabs 
-          value={value} 
-          onChange={handleChange} 
-          sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }} 
+        <Tabs
+          value={activeTab}
+          onChange={handleChange}
+          sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
         >
           {tabData.map((tab) => (
-            <Tab 
-              key={tab.to} // Use 'to' (path) as the unique key
-              icon={tab.icon} 
-              label={tab.label} 
-              component={RouterLink} 
-              to={tab.to} 
-              value={tab.to} 
-            />
+            <motion.div 
+              key={tab.to} 
+              whileHover={{ scale: 1.05 }} 
+              whileTap={{ scale: 0.95 }}
+              onHoverStart={() => setActiveTab(tab.to)} 
+              onHoverEnd={() => setActiveTab(pathname)}
+            >
+              <Tab
+                icon={tab.icon}
+                label={tab.label}
+                component={RouterLink}
+                to={tab.to}
+                value={tab.to}
+                sx={{
+                  color: activeTab === tab.to ? "primary.contrastText" : "inherit",
+                  bgcolor: activeTab === tab.to ? "primary.dark" : "transparent",
+                }}
+              />
+            </motion.div>
           ))}
         </Tabs>
+        <IconButton/>
       </Toolbar>
+      <AnimatePresence>
+        
+         
+      </AnimatePresence>
     </AppBar>
   );
 }

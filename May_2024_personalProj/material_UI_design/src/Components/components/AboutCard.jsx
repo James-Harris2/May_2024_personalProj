@@ -12,7 +12,7 @@ export default function MediaCard() {
       <CardMedia
         sx={{ height: 140 }}
         image="../src/Assets/asset2_me.jpg"
-        title="green iguana"
+        title="James "
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">

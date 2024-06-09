@@ -41,7 +41,6 @@ function ViewResume() {
         <Box mb={1}>
           <Typography variant="subtitle2" gutterBottom>
             Owner Operator Vegas Strong Transport (Feb 2021- April 2022)
-            Company Driver Stevens Transport (2004 - 2021 )
           </Typography>
         </Box>
 
