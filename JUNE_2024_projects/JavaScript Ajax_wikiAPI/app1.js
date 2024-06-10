@@ -1,4 +1,4 @@
-const url = 'https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&origin=*&srsearch=javascript;';
+const url = 'https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&origin=*&srsearch=;';
 
 // SIMPLE API REQUEST MADE TO WIKI
 
@@ -16,11 +16,12 @@ btn.addEventListener('click',(e) =>{
     let searchTerm = inputVal.value || 'JavaScript';
     let tempURL = url + searchTerm;
     console.log(tempURL);
-    fetch(url).then((rep) =>{ return rep.json()})
+    fetch(tempURL).then((rep) =>{ return rep.json()})
     .then((data)=>{
         console.log(data);
-        output.innerHTML = 'Results for ' + searchTerm;
-        output.innerHTML += `;`
+        output.innerHTML = '<div> Results for ' + searchTerm + '</div>';
+        output.innerHTML += `Total Results :
+        ${data.query.searchinfo.totalhits}<br>`;
         maker(data.query.search)
     })
 })
