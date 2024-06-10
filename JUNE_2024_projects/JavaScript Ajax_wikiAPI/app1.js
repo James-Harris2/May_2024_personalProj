@@ -29,6 +29,8 @@ function maker(data){
         console.log(el);
         const div = document.createElement('div');
         div.innerHTML += `${el.title}`;
+        div.classList.add('box')
+        div.innerHTML += el.snippet;
         output.append(div)
     })
 }
