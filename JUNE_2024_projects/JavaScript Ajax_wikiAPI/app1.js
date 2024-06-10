@@ -30,7 +30,7 @@ btn.addEventListener('click',(e) =>{
 
 function maker(data){
     console.log(data);
-    output.innerHTML = 'Results for '
+    output.innerHTML = 'Results for ';
     data.forEach(el => {
         console.log(el);
         const div = document.createElement('div');
