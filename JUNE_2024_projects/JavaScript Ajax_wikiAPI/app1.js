@@ -28,7 +28,9 @@ function maker(data){
     data.forEach(el => {
         console.log(el);
         const div = document.createElement('div');
-        div.innerHTML += `${el.title}`;
+        div.innerHTML += `<h3>${el.title}</h3>`;
+        div.innerHTML += `<div>Page ID ${el.pageid} | 
+        Size ID ${el.size} | Wordcount ID ${el.wordcount} |</div>`;
         div.classList.add('box')
         div.innerHTML += el.snippet;
         output.append(div)
