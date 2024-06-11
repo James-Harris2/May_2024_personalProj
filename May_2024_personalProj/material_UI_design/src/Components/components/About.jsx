@@ -11,7 +11,7 @@ function About() {
   return (
       <Box sx={{ maxWidth: 800, margin: "0 auto", padding: 2 }}> {/* Added padding for visual spacing */}
           <ImgMediaCard 
-              imageSrc="../../assets/Assets/asset2_me.jpg" // Add your image path
+              imgsrc="../../assets/Assets/asset2_me.jpg" // Add your image path
               title="About Me"
               websiteLink="" // Add your website link
           /> 
