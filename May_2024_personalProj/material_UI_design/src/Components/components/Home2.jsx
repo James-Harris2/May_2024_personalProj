@@ -25,8 +25,8 @@ function Home2() {
            ALLOW LET ME <span style={{ color: "white" }}>re-INTRODUCE</span> MYSELF
           </Typography>
           <Typography variant="body1">
-            I love coding, after spending many years as commercial truck driver. In 2022, I decided to pursure my passion in Web Development.
-            I enjoy learning Technologies, and serving my community with my talents build something great products. 
+            I love coding, after spending many years as commercial truck driver. I attended Vschool Coding BootCamp,completed the program in 2024 In 2022,
+            I enjoy learning technologies, and serving my community with my talents, and building amazing products. 
             <br />
             <br />
             I am fluent in languanges  & frameworks like...

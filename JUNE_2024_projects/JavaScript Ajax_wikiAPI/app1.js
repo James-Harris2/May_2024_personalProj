@@ -19,7 +19,7 @@ btn.addEventListener('click',(e) =>{
     fetch(tempURL).then((rep) =>{ return rep.json()})
     .then((data)=>{
         console.log(data);
-        output.innerHTML = '<div> Results for ' + searchTerm + '</div>';
+        output.innerHTML = '<div>Results for ' + searchTerm + '</div>' ;
         output.innerHTML += `Total Results :
         ${data.query.searchinfo.totalhits}<br>`;
         maker(data.query.search)
@@ -31,15 +31,14 @@ btn.addEventListener('click',(e) =>{
 
 function maker(data){
     console.log(data);
-    output.innerHTML = 'Results for ';
-    data.forEach(el => {
+    
+    data.forEach(el=> {
         console.log(el);
         const div = document.createElement('div');
-        div.innerHTML += `<h3><a href="https://en.wikipedia.org/wiki?curid=${el.pageid}" target="_blank">${el.title}</h3>`;
-        div.innerHTML += `<div>Page ID ${el.pageid} | 
-        Size ID ${el.size} | Wordcount ID ${el.wordcount} |</div>`;
-        div.classList.add('box')
+        div.innerHTML += `<h3><a href="https://en.wikipedia.org/wiki?curid=${el.pageid}" target="_blank">${el.title}</a></h3>`;
+        div.innerHTML += `<div>Page ID ${el.pageid} | Size ${el.size} | WordCount ${el.wordcount} </div>`;
+        div.classList.add('box');
         div.innerHTML += el.snippet;
-        output.append(div)
+        output.append(div);
     })
 }

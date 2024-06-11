@@ -6,7 +6,7 @@ function ProjectCards() {
 
   return (
     <Card>
-      <CardMedia component="img" height="140" image={projectURL} alt="React Fun Project" />
+      <CardMedia component="img" height="140" img src={projectURL} alt="React Fun Project" />
       <CardContent>
         <Link to={projectURL} style={{ textDecoration: 'none' }}> {/* Link to project URL */}
           <Typography gutterBottom variant="h5" component="div">

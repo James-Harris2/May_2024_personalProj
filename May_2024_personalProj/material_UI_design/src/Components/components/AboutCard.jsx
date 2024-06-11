@@ -11,7 +11,7 @@ export default function MediaCard() {
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         sx={{ height: 140 }}
-        image="../src/Assets/asset2_me.jpg"
+        img src="../src/Assets/asset2_me.jpg"
         title="James "
       />
       <CardContent>

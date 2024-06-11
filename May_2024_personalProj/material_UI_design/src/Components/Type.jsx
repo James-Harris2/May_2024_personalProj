@@ -19,8 +19,8 @@ function Type() {
             options={{
               strings: [
                 "I'm James E. Harris, II",
-                "Software Developer",
-                "Former OTR Driver ",
+                "Full Stack Developer",
+                "Former OverTheRoad commercial Truck Driver ",
                 "I build custom websites & mobile application",
                 "Open Source Contributor"
               ],

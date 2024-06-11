@@ -14,11 +14,10 @@ function Home() {
         transition={{ duration: 0.8 }}
       >
         <Typography variant="h4" align="center" gutterBottom>
-          Welcome Drivers!
+          Welcome to my web development portfolio!
           <Type />
         </Typography>
         <Typography variant="subtitle1" align="center" color="textSecondary" paragraph>
-           Specializing in developing Web & Mobile site for Commerical Trucking Co.
         </Typography>
       </motion.div>
 
