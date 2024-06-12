@@ -13,9 +13,9 @@ import Footer from "./Components/components/Footer"
 import Home2 from './Components/components/Home2';
 import ProjectCards from './Components/components/ProjectCards';
 // import ContactMe from './Components/components/Contact';
-import ContactForm from './Components/components/Contact';
-import GitHub from '@mui/icons-material/GitHub';
-import GitHubCalendar from 'react-github-calendar';
+// import ContactForm from './Components/components/Contact';
+// import GitHub from '@mui/icons-material/GitHub';
+// import GitHubCalendar from 'react-github-calendar';
 import Github from './Components/components/GitHub';
 
 // Page transition animations

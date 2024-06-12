@@ -16,7 +16,7 @@ function MediaCard() {
       <CardMedia
         component="img"
         height="140" // Adjust height as needed
-        img src={'./assets/Assets/asset2_me.jpg'}
+        img src={'../../../public/asset2_me.jpg'}
         alt={'james'}
       />
       <CardContent>
