@@ -1,68 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animal Guessing Game</title>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WikiMedia API Practice</title>
     <style>
-        body {
-            font-family: sans-serif;
-            text-align: center;
-            background-color: #f0f0f0;
-        }
-        
-        #gameContainer {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+      .box{
+        padding: 10px;
+        margin: auto;
+        width: 80%;
+        border:1px solid #ddd;
+        border-radius: 23px;
+      }
 
-        input[type="button"] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        input[type="button"]:hover {
-            background-color: #3e8e41;
-        }
-    </style>
-</head>
-<body>
-    <div id="gameContainer">
-        <h1>Animal Guessing Game</h1>
-        <p>Guess the animal I'm thinking of!</p>
-        <input type="button" id="guessButton" value="Guess">
-    </div>
-
-    <script>
-        const animals = ["lion", "monkey", "elephant", "zebra"];
-        let secretAnimal = animals[Math.floor(Math.random() * animals.length)];
-
-        document.getElementById("guessButton").addEventListener("click", () => {
-            let guess = prompt("I'm thinking of an animal. Can you guess what it is?");
-
-            while (!guess || guess.toLowerCase() !== secretAnimal) {
-                if (!guess) {
-                    alert("You didn't enter a guess. Try again!");
-                } else {
-                    alert("Try again!");
-                }
-                guess = prompt("I'm thinking of an animal. Can you guess what it is?");
-            }
-
-            alert("You got it! It was a " + secretAnimal + "!");
-
-            // Reset for a new game
-            secretAnimal = animals[Math.floor(Math.random() * animals.length)];
-        });
-    </script>
-</body>
-
-  <h4> Only 4 animails to choose from </h4>
-    <summary> Think of zoo </summary>
+      .box > div{
+        padding: 10px;
+        font-size: 1.2em;
+      }
+      </style>
+  </head>
+  <body>
+    <h1>James's JSON jankyNess</h1>
+    <input type="text" class="val">
+    <button class="btn">Click</button>
+    <div class=output></div>
+    <script src="app1.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
