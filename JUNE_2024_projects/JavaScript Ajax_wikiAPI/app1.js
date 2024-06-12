@@ -27,7 +27,7 @@ btn.addEventListener('click',(e) =>{
 })
 
 
-// Adding a function on
+// Adding a function ON
 
 function maker(data){
     console.log(data);
